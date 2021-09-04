@@ -1,0 +1,113 @@
+{
+  "id": "719862d6-01ca-4c71-83e5-a75631e0d0a9",
+  "version": "2.0",
+  "name": "Manual Test",
+  "url": "https://5nhatnhat.com/",
+  "tests": [{
+    "id": "068373e9-16f3-421f-8931-f50389fa6155",
+    "name": "Search Test",
+    "commands": [{
+      "id": "8e8bd1d1-bb82-4641-9d7c-c574d535fd80",
+      "comment": "",
+      "command": "open",
+      "target": "https://5nhatnhat.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "32130270-0dc3-4ace-ac36-72b92850ea7c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94521403-08a2-4dc2-9b4c-8e6fdb72e3f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input-search-desktop > .form-control",
+      "targets": [
+        ["css=.input-search-desktop > .form-control", "css:finder"],
+        ["xpath=(//input[@name='t_s'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e52ccb2-36c3-4b7e-b1d5-9d8a116cd947",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=dropdownMenuSk",
+      "targets": [
+        ["id=dropdownMenuSk", "id"],
+        ["css=#dropdownMenuSk", "css:finder"],
+        ["xpath=//a[contains(text(),'Sức khỏe')]", "xpath:link"],
+        ["xpath=//a[@id='dropdownMenuSk']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/suc-khoe/so-tay-benh-hoc')]", "xpath:href"],
+        ["xpath=//li[4]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "97dad4f5-2582-4353-835a-f4bd07820374",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input-search-desktop > .form-control",
+      "targets": [
+        ["css=.input-search-desktop > .form-control", "css:finder"],
+        ["xpath=(//input[@name='t_s'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "đau đầu"
+    }, {
+      "id": "bb20c075-19ea-4928-97d7-982174ea2369",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input-search-desktop img",
+      "targets": [
+        ["css=.input-search-desktop img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://5nhatnhat.com/v2/images/zoom-2.svg')]", "xpath:img"],
+        ["xpath=//div[2]/button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "977a4945-2609-4f4c-9191-bc8d09fe991a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-product:nth-child(2) .show-desktop",
+      "targets": [
+        ["css=.item-product:nth-child(2) .show-desktop", "css:finder"],
+        ["xpath=(//img[@alt='Nhất Nhất 3 - Hoạt huyết'])[2]", "xpath:img"],
+        ["xpath=//div[@id='product']/div/div[2]/div/div/div[2]/div[2]/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "914cade5-fa96-4d80-86cd-e919f2ee0801",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#product_info_2 .inc-button",
+      "targets": [
+        ["css=#product_info_2 .inc-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[13]", "xpath:attributes"],
+        ["xpath=//form[@id='product_info_2']/div/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/form/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0459c6df-d7d7-4063-bd17-43330d7178a0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ad61f762-0423-4d10-855e-84a5467f80d4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.google.co.in/", "https://5nhatnhat.com/"],
+  "plugins": []
+}

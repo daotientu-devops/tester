@@ -1,0 +1,127 @@
+{
+  "id": "6c044fa4-51b7-44db-9be7-df4790997d7b",
+  "version": "2.0",
+  "name": "Login Test",
+  "url": "https://www.testandquiz.com",
+  "tests": [{
+    "id": "ae2212f3-29f6-4c97-9850-9aef2a80e3f9",
+    "name": "Test Case 1",
+    "commands": [{
+      "id": "5db3f77c-6424-4b19-8b36-0098eb69c18a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98ece222-a5cb-4ca7-9f50-7c786adb604a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88b4a737-d327-4e91-894b-4202d06b6c3d",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Quiz Show | Test And Quiz",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ab9cc3b-df8a-408d-bc96-b4837c4153ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.glyphicon-log-in",
+      "targets": [
+        ["css=.glyphicon-log-in", "css:finder"],
+        ["xpath=//li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0f6e9d6-1f2a-4f0a-b19d-19ffc2162c2a",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email_id", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccecb905-648b-4a93-9e6d-40f91393278e",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email_id", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "dada"
+    }, {
+      "id": "f59d5bff-47cd-421d-908f-b33c45165ff7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-horizontal",
+      "targets": [
+        ["css=.form-horizontal", "css:finder"],
+        ["xpath=//form[@action='/user-login-validation']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "679649ae-3579-4630-a00a-473e8dc748b4",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91d2404e-3081-460a-8d4a-6db4de9df9e3",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "2343242"
+    }, {
+      "id": "98d7ef63-7a2e-430c-8f66-fb9476f9e432",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1e48ed08-3fa0-4ac4-b32a-5f7e62dc40d0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ae2212f3-29f6-4c97-9850-9aef2a80e3f9"]
+  }],
+  "urls": ["https://www.testandquiz.com/"],
+  "plugins": []
+}

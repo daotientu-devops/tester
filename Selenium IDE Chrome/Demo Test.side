@@ -1,0 +1,85 @@
+{
+  "id": "521bf55d-1f54-4f9a-91f1-ed1eb24a15d7",
+  "version": "2.0",
+  "name": "Demo Test",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "67afc214-d547-41cf-b1e2-d9f0ba0faff2",
+    "name": "javaTpoint_test",
+    "commands": [{
+      "id": "1830934f-03d2-40d4-9aa3-72d793227058",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0319adcd-d25c-473a-8fa4-87203a05a1d5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "665x461",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58341826-9058-4b85-83d8-49d4a99ec3f6",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Java Tutorials"
+    }, {
+      "id": "a945f184-7001-456e-947d-a599b45bd7aa",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "d2a9616e-b705-44dc-9dad-08eb1e0baf0c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.g:nth-child(5) .LC20lb",
+      "targets": [
+        ["css=.g:nth-child(5) .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div[2]/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Java Tutorial - Tutorialspoint')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0353f8f5-1c26-41b4-817e-eb100f2c0095",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Java - Environment Setup",
+      "targets": [
+        ["linkText=Java - Environment Setup", "linkText"],
+        ["css=.toc:nth-child(3) > li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Java - Environment Setup')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/java/java_environment_setup.htm')]", "xpath:href"],
+        ["xpath=//ul[2]/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Java - Environment Setup')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "250bc3cf-c13a-4715-9265-148cde61c56e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["67afc214-d547-41cf-b1e2-d9f0ba0faff2"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
